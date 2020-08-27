@@ -1,0 +1,51 @@
+
+h2.section-title.color-white(data-before="/*", data-after="*/") Contacts
+.contacts.flex.flex-justify-sa.blog-content
+    .contact-block.flex.flex-column
+        h2.contact-title My Contact
+        ul.flex.flex-column.contact-list
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/location.png")
+                .flex.flex.justify-start.flex-column
+                    strong Location
+                    p Kiev, Ukraine
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/linkedin.png")
+                .flex.flex.justify-start.flex-column
+                    strong LinkedIn
+                    a.link.snake(href="https://www.linkedin.com/") Oleksandr Honchar
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/telegram.png")
+                .flex.flex.justify-start.flex-column
+                    strong Telegram
+                    a.link.snake(href="https://telegram.me/") @sashadev23
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/outlook.png")
+                .flex.flex.justify-start.flex-column
+                    strong Email
+                    a.text-elipsis.link.snake(href="mailto:Sashahdev23@gmail.com") Sashahdev23@gmail.com
+            li.contact-list-item.flex.flex-align-center
+                img.contact-logo(src="./assets/img/icon/telephone.png")
+                .flex.flex.justify-start.flex-column
+                    strong Phone
+                    a(href="tel:+380686542113").link.snake +380 68 6542113
+    form#contact_form.contact-block.flex.flex-column(data-label="Sending messages...")
+        h2.contact-title Have a question or want to work together?
+        ul.flex.flex-column.contact-list
+            li.flex.flex-align-start
+                .contact-list-item.flex.flex-align-start.flex-grow
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Name
+                        input#contact_name.ipt(type="text", name="name", placeholder="John")
+                        p.form-error
+                .contact-list-item.flex.flex-align-start.flex-grow
+                    .flex.flex.justify-start.flex-column.full-width
+                        strong Email
+                        input#contact_email.ipt(type="email", name="email", placeholder="email@example.com")
+                        p.form-error
+            li.contact-list-item.flex.flex-column
+                strong.text-left Message
+                textarea#contact_message.ipt(type="text", name="message", placeholder="Type your messages...", rows="10", style="resize: none")
+                p.form-error
+            li.contact-list-item.flex.flex-align-center
+                button.btn.btn-primary(type="submit") Send messages

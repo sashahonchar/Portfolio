@@ -1,0 +1,146 @@
+.text
+    &-center
+        text-align: center
+    &-left
+        text-align: left
+    &-right
+        text-align: right
+    &-uppercase
+        text-transform: uppercase
+    &-lowercase
+        text-transform: lowercase
+    &-elipsis
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width 80vw
+
+
+
+body, h1, h2, h3, h4, h5, h6, button,  span,p, strong,a
+    font-size-adjust: 0.5
+    text-rendering: optimizeLegibility;
+    font-weight: 400
+    line-height: 1.6
+    font-family: $font, 'Raleway','Helvetica','Arial',sans-serif
+    &.bold
+        font-weight: 600
+body, h1, h2, h3, h4, h5, h6, button,  span,p
+    color: $colorGrey
+p
+    font-size: 16px
+p, div, li
+    font-family: $fontText,  Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+h1,h2,h3,h4,h5,h6,.link, a, strong
+    font-family: $font, "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-weight: 600
+/* Body Content */
+.title
+    // font-size: 3.5em
+    // text-align: center
+    font-weight: 500
+    font-size: 42px;
+    font-family:  $font;
+    // text-transform: uppercase;
+.subtitle
+    width: 100%
+    &:hover
+        color: $primary
+.section
+    &-title
+        transform: translateY(-30px);
+        font-size: 3em;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5), 5px 6px 10px rgba(0,0,0,0.7)
+        width: 100%
+        text-align: center
+        align-self: flex-start
+        position absolute
+        top: 0
+        @media all and (max-width 990px)
+            font-size: 2.5em
+            transform: translateY(-20px);
+        @media all and (max-width 556px)
+            font-size: 2em
+            transform: translateY(-15px);
+            
+        &::before, &::after
+            color: $primary
+        &::before
+            content: attr(data-before)
+            margin-right: 15px
+        &::after
+            content: attr(data-after)
+            margin-left: 15px
+        &-not_rotate
+            transform:  translateY(-30px) rotate(-2deg) !important;
+            
+@media (min-width: 43.75em)
+    .wrapper
+        font-size: 1em;
+        line-height: 1.6;
+    h1 
+        font-size: 2.5em;
+        line-height: 1.125;
+
+    h2 
+        font-size: 2em;
+        /* 2x body copy size = 32px */
+        line-height: 1.25;
+        
+    h3 
+        font-size: 1.5em;
+        /* 1.5x body copy size = 24px */
+        line-height: 1.25;
+    h4 
+        line-height: 1.22222222;
+        /* (22px / 18px */
+
+@media (min-width: 56.25em) {
+  h1{
+    font-size: 3em;
+    line-height: 1.05;}
+  h2{
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;}
+  h3{
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;}
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;}
+    /* 35px / 24px */
+}
+h1
+  font-size: 2em;
+  line-height: 1.25;
+
+h2
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+

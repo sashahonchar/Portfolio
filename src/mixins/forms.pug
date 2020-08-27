@@ -1,0 +1,56 @@
+//- mixin _contactForm   
+//-     .container.contact-form
+//-         .row
+//-             .col
+//-                 .row
+//-                     .col-md-6.col-sm-12
+//-                         input(name='name' placeholder='Full Name')
+//-                         span.form-error
+//-                     .col-md-6.col-sm-12
+//-                         input(type='email' placeholder='Email' name='email')
+//-                         span.form-error
+//-                 .row
+//-                     .col
+//-                         input(placeholder='Subject' name='subject')
+//-                         span.form-error
+//-                 .row
+//-                     .col
+//-                         textarea(rows='6' name='message' maxlength='200' placeholder='Your message')
+//-                         span.form-error
+
+
+//- mixin _contactModal
+//-     #contact-modal.contact-modal
+//-         #contact-modal-backdrop.backdrop
+//-         form.content.padding.contact
+//-             .container
+//-                 .row
+//-                     .col
+//-                         h3.bold Get in touch
+//-                         h4 Our engagement manager will provide you with more info about our approaches.
+//-             +_contactForm
+//-             .container
+//-                 .row
+//-                     .col.flex.justify-end
+//-                         button.btn.btn-secondary.shadow Send Request
+
+
+
+mixin _infoModal
+  #info-modal.modal
+    .modal-backdrop
+    .modal-children.padding
+      div
+        .row
+          .col-12.mb-15
+            img(src='/assets/img/robot.svg')
+          .col-12.mb-15
+            p#info-title.bold
+          .col-12.mb-15
+            p#info-subtitle
+              #modal-content.col-12
+      div
+        .row
+          .col
+            button.btn.btn-secondary#close-info-button
+              | Got it

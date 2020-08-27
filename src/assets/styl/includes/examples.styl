@@ -1,0 +1,94 @@
+$desktoptHeight = 175px
+$desktoptWidth = 320px
+
+$phabletHeight = 220px
+$phabletWidth = 165px
+
+$mobileHeight = 150px
+$mobileWidth = 75px
+
+.example
+  &-item
+    width: $desktoptWidth
+    margin: 15px
+    // flex-basis: 340px
+  &-content
+    width: $desktoptWidth
+  
+.device-list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 15px
+  flex-wrap: wrap
+  box-sizing: border-box
+  @media (max-width: 991px)
+    justify-content: space-around
+.device-shadow
+   box-shadow: 0 0 5px 1px rgba(0,0,0,0.8)
+.device-wrapper
+  height: $phabletHeight
+  position: relative
+  margin: 7.5px
+  display: flex
+  align-items: center;
+  flex-wrap: wrap
+  justify-content: space-around
+  .desktop
+     margin-bottom: 10px
+     & + .phablet
+        position: absolute;
+        right: -30px;
+        top: 34px;
+     & + .mobile
+       position: absolute
+       top: 30px
+       right: -30px
+  .phablet
+    z-index: 1
+  .mobile
+    z-index: 1
+    
+  
+.desktop
+  width: $desktoptWidth
+  height: $desktoptHeight
+  background-color: #8d8d8d
+  border-radius: 5px
+  padding: 10px
+  transition: 1s
+  .monitor
+    background-size: 102%;
+.phablet
+  width: $phabletWidth
+  height: $phabletHeight
+  background-color: #8d8d8d
+  padding: 7px
+  border-radius: 10px
+  transition: 1s
+  .monitor
+    border-radius: 10px
+.mobile
+  width: $mobileWidth
+  height: $mobileHeight
+  background-color: #8d8d8d
+  border-radius: 7px
+  padding: 3px
+  position: relative
+  transition: transform 1s
+
+  .monitor
+    border-radius: 4px
+    background-size cover
+
+.monitor
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+.platform-list
+  span 
+    word-spacing: 5px
+    

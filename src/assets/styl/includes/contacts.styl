@@ -1,0 +1,49 @@
+.contacts
+    width: 90%
+    background: #FFFFFF
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2)
+    padding: 30px
+    @media all and (max-width 990px)
+        width: 100%
+        padding: 30px 10px
+    
+    @media all and (max-width 576px)
+        padding: 30px 5px
+        justify-content: center
+    .contact
+        &-block
+            flex-basis: 400px
+            flex-grow: 1
+            margin-bottom: 25px
+        &-title
+            margin-bottom: 25px
+        &-list
+            &-item
+                margin: 10px 5px 10px
+                height: max-content
+                flex-wrap: nowrap
+                &.compose
+                    flex-basis: 250px
+                &:hover
+                    .contact-logo
+                        transform: translateY(-3px)
+                a
+                    color: $colorGrey
+                    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, 'AppleGothic', sans-serif
+                    &:hover
+                        color: $primary
+                input
+                    padding: 10px 15px
+                    margin-left: 0
+                textarea
+                    padding: 10px 15px
+                    margin-left: 0
+                    width: 100%
+                .form-error
+                    color: red
+                    font-size 12px
+        &-logo
+            width: 30px
+            height: 30px
+            margin-right: 10px
+            transition: ($duration)s

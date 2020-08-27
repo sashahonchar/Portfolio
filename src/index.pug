@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ./parts/head.pug
+  
+  body
+    include ./mixins/forms
+    .wrapper
+      include ./parts/nav.pug
+      
+      main.main
+        section.section
+          #particles-js.particles-jss
+          #home.container.flex-align-center.flex-justify-sa.section-rotate.section-dark.home-section
+            include ./parts/home.pug
+        #about-me.container.flex-align-center.flex-justify-sa
+          include ./parts/about-me.pug
+        #why-me.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./parts/whyme.pug
+        
+        #examples.container.flex-align-top.flex-justify-sa
+          include ./parts/examples.pug
+        #skills.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+          include ./parts/skills.pug
+
+        //- #services.container.flex-align-center.flex-justify-sa.section-rotate.section-dark
+        //-   include ./parts/services.pug
+        #contacts.container.flex-align-center.flex-justify-sa.contacts-wrapper
+            include ./parts/contacts.pug
+        include ./parts/footer.pug
+
+        footer
+          div 
+            +_infoModal
+          
+    //- script(src="https://platform.linkedin.com/badges/js/profile.js", async, defer)
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    script(src="assets/js/particles.js")
+    script(src="assets/js/main.js")
+    
+    
+        
