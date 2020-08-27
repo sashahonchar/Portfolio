@@ -11,7 +11,9 @@
 		"eslint:fix": "eslint --fix ./src",
 		"precommit": "pretty-quick --staged",
 		"server-start": "babel-node backend/index.js",
-		"server-watch": "nodemon --exec yarn server-start"
+		"server-watch": "nodemon --exec yarn server-start",
+		"heroku-prebuild": "npm i -f",
+		"heroku-postbuild": "npm run build"
 	},
 	"engines": {
 		"yarn": "1.17.3"
