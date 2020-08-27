@@ -13,7 +13,7 @@
 		"server-start": "babel-node backend/index.js",
 		"server-watch": "nodemon --exec yarn server-start",
 		"heroku-prebuild": "npm i -f",
-		"heroku-postbuild": "npm run build"
+		"heroku-postbuild": "parcel build src/index.pug -d build"
 	},
 	"engines": {
 		"yarn": "1.17.3"
