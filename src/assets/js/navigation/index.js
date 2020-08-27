@@ -4,10 +4,10 @@ const header = document.querySelector('#header');
 
 function debounce(func, wait, immediate) {
 	var timeout;
-	return function() {
+	return function () {
 		var context = this,
 			args = arguments;
-		var later = function() {
+		var later = function () {
 			timeout = null;
 			if (!immediate) func.apply(context, args);
 		};
@@ -37,7 +37,7 @@ const ScrollControl = class {
 
 		window.addEventListener('scroll', _ => this.sectionHandler());
 		this.linksHandler();
-        this._updateNavigation = debounce(this.updateNavigation, 30);
+		this._updateNavigation = debounce(this.updateNavigation, 30);
 		if (this.hash && this.hash !== '/') this.updateSections()
 		this.sectionHandler()
 	}
@@ -76,7 +76,7 @@ const ScrollControl = class {
 		this.links.forEach(link => {
 			if (link.hash === this.hash) {
 				link.node.classList.add('btn-primary');
-				const title = `J.L. - ${link.title}`;
+				const title = `SASHA - ${link.title}`;
 				window.history.replaceState(null, null, link.hash);
 				window.document.title = title;
 			} else {

@@ -1,31 +1,31 @@
 
 export const router = {
 	'/': {
-		title: 'J.L. - Website development, desktop and mobile applications',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Website development, desktop and mobile applications',
+		description: 'SASHA - Create your business with us'
 	},
 	'/whyme': {
-		title: 'J.L. - Why Me? - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Why Me? - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	},
 	'/about': {
-		title: 'J.L. - About - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - About - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	},
 	'/skills': {
-		title: 'J.L. - Skills - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Skills - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	},
 	'/examples': {
-		title: 'J.L. - Examples - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Examples - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	},
 	'/services': {
-		title: 'J.L. - Services - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Services - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	},
 	'/contacts': {
-		title: 'J.L. - Contacts - Create your business with us',
-		description: 'J.L. - Create your business with us'
+		title: 'SASHA - Contacts - Create your business with us',
+		description: 'SASHA - Create your business with us'
 	}
 };
